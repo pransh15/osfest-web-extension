@@ -1,0 +1,16 @@
+{
+
+    "manifest_version": 2,
+    "name": "Borderify",
+    "version": "1.0",
+  
+    "description": "Adds a green border to all webpages matching github.com.",
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.github.com/*"],
+        "js": ["borderify.js"]
+      }
+    ]
+  
+  }
